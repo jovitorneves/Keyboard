@@ -17,6 +17,12 @@
 		CE9C0325243CC2550035E1A9 /* KeyboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C0324243CC2550035E1A9 /* KeyboardUITests.swift */; };
 		CE9C0339243CC2870035E1A9 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C0338243CC2870035E1A9 /* KeyboardViewController.swift */; };
 		CE9C033D243CC2870035E1A9 /* KeyboardKit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE9C0336243CC2870035E1A9 /* KeyboardKit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE9C0343243CC5860035E1A9 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C0342243CC5860035E1A9 /* KeyboardView.swift */; };
+		CE9C0346243CC6110035E1A9 /* KeyboardKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C0345243CC6110035E1A9 /* KeyboardKeyView.swift */; };
+		CE9C0348243CC6430035E1A9 /* KeyboardTextDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C0347243CC6430035E1A9 /* KeyboardTextDocument.swift */; };
+		CE9C034A243CC6780035E1A9 /* StandardKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C0349243CC6780035E1A9 /* StandardKeyboard.swift */; };
+		CE9C034C243CC6AA0035E1A9 /* KeyboardHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9C034B243CC6AA0035E1A9 /* KeyboardHelpers.swift */; };
+		CE9C037F243D3C890035E1A9 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = CE9C030B243CC2550035E1A9 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,14 @@
 		CE9C0336243CC2870035E1A9 /* KeyboardKit.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KeyboardKit.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9C0338243CC2870035E1A9 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		CE9C033A243CC2870035E1A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9C0342243CC5860035E1A9 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		CE9C0345243CC6110035E1A9 /* KeyboardKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardKeyView.swift; sourceTree = "<group>"; };
+		CE9C0347243CC6430035E1A9 /* KeyboardTextDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTextDocument.swift; sourceTree = "<group>"; };
+		CE9C0349243CC6780035E1A9 /* StandardKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboard.swift; sourceTree = "<group>"; };
+		CE9C034B243CC6AA0035E1A9 /* KeyboardHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelpers.swift; sourceTree = "<group>"; };
+		CE9C037E243D1C4A0035E1A9 /* Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Keyboard.entitlements; sourceTree = "<group>"; };
+		CE9C0380243E18C10035E1A9 /* KeyboardKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyboardKit.entitlements; sourceTree = "<group>"; };
+		CE9C0382243E1E940035E1A9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +131,7 @@
 				CE9C0323243CC2550035E1A9 /* KeyboardUITests */,
 				CE9C0337243CC2870035E1A9 /* KeyboardKit */,
 				CE9C0300243CC2520035E1A9 /* Products */,
+				CE9C0381243E1E940035E1A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +149,7 @@
 		CE9C0301243CC2520035E1A9 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				CE9C037E243D1C4A0035E1A9 /* Keyboard.entitlements */,
 				CE9C0302243CC2520035E1A9 /* AppDelegate.swift */,
 				CE9C0304243CC2520035E1A9 /* SceneDelegate.swift */,
 				CE9C0306243CC2520035E1A9 /* ViewController.swift */,
@@ -166,10 +182,32 @@
 		CE9C0337243CC2870035E1A9 /* KeyboardKit */ = {
 			isa = PBXGroup;
 			children = (
+				CE9C0380243E18C10035E1A9 /* KeyboardKit.entitlements */,
 				CE9C0338243CC2870035E1A9 /* KeyboardViewController.swift */,
-				CE9C033A243CC2870035E1A9 /* Info.plist */,
+				CE9C0342243CC5860035E1A9 /* KeyboardView.swift */,
+				CE9C0345243CC6110035E1A9 /* KeyboardKeyView.swift */,
+				CE9C0347243CC6430035E1A9 /* KeyboardTextDocument.swift */,
+				CE9C0349243CC6780035E1A9 /* StandardKeyboard.swift */,
+				CE9C034B243CC6AA0035E1A9 /* KeyboardHelpers.swift */,
+				CE9C034D243CC7200035E1A9 /* Resorces */,
 			);
 			path = KeyboardKit;
+			sourceTree = "<group>";
+		};
+		CE9C034D243CC7200035E1A9 /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
+				CE9C033A243CC2870035E1A9 /* Info.plist */,
+			);
+			name = Resorces;
+			sourceTree = "<group>";
+		};
+		CE9C0381243E1E940035E1A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE9C0382243E1E940035E1A9 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,7 +397,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9C037F243D3C890035E1A9 /* Assets.xcassets in Sources */,
 				CE9C0339243CC2870035E1A9 /* KeyboardViewController.swift in Sources */,
+				CE9C0343243CC5860035E1A9 /* KeyboardView.swift in Sources */,
+				CE9C034C243CC6AA0035E1A9 /* KeyboardHelpers.swift in Sources */,
+				CE9C0348243CC6430035E1A9 /* KeyboardTextDocument.swift in Sources */,
+				CE9C0346243CC6110035E1A9 /* KeyboardKeyView.swift in Sources */,
+				CE9C034A243CC6780035E1A9 /* StandardKeyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +566,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,6 +576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vitor.Keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -540,6 +587,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Keyboard/Keyboard.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Keyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -599,6 +647,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KeyboardUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -618,6 +667,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KeyboardUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -636,7 +686,9 @@
 		CE9C033F243CC2870035E1A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = KeyboardKit/KeyboardKit.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = KeyboardKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -645,6 +697,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = vitor.Keyboard.KeyboardKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -654,6 +707,7 @@
 		CE9C0340243CC2870035E1A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KeyboardKit/KeyboardKit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = KeyboardKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
